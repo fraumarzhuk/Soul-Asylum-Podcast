@@ -1,0 +1,248 @@
+body {
+  background-color: #212529;
+  color: white;
+  cursor: url('cursor.cur'), auto;
+  margin: 0;
+  font-family: 'Unbounded';
+}
+
+h1 {
+  color: #FBE5C1;
+  font-size: 1.8rem;
+}
+
+h3 {
+  padding-top: 20px;
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+a:hover {
+  color: white;
+  cursor: url('link.cur'), auto;
+}
+
+button:hover {
+  cursor: url('link.cur'), auto !important;
+}
+
+.homeLogo {
+  height: 40px;
+  border-radius: 50%;
+}
+
+.navbar {
+  padding-top: 20px;
+  font-size: 1rem;
+}
+
+.boyImg {
+  width: 90%;
+  margin-right: 30px;
+  margin-top:30px;
+}
+
+.imgcol {
+  text-align: right;
+  width: 45%;
+}
+
+.listen {
+  margin-top: 95px;
+  text-align: center;
+}
+
+.listenRow {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.channels {
+  font-size: 2rem;
+  display: flex;
+  font-size: 2rem;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: stretch;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-left: 3%;
+}
+
+.listenLink {
+  text-decoration: none;
+  color: #FBE5C1;
+  margin-bottom: 60px;
+}
+
+.fa-brands {
+  padding-top: 7px;
+}
+
+.episodes {
+  width: 60%;
+}
+
+.ContentSet {
+  margin-top: 100px;
+  padding-bottom: 150px;
+}
+
+@media only screen and (max-width: 920px) {
+  .imgcol {
+    text-align: center;
+    width: 100%;
+  }
+
+  .enterHeading {
+    margin-top: 20px;
+    padding-bottom: 30px;
+  }
+
+  .enterText {
+    padding-top: 20px !important;
+  }
+  .ContentSet {
+    padding-bottom: 0;
+    margin-top: 50px;
+  }
+  .donationsRow{
+    padding-top: 30px!important;
+  }
+  .donateImg {
+    padding-top: 30px;
+  }
+  .rightlink {
+    display: none;
+  }
+  .patreonButton{
+    margin-top: 60px;
+  }
+  #jump3 {
+    padding-bottom: 40px!important;
+  }
+  p {
+    font-size: 0.7rem;
+  }
+  .listenRow {
+    margin-top: 0;
+  }
+  .listen {
+    margin-top: 60px;
+  }
+  .feedback-row {
+    margin-top: 0px!important;
+  }
+}
+
+@media only screen and (min-width: 950px) {
+ .downlink {
+   display: none;
+ }
+}
+
+
+.enterText {
+  padding-top: 200px;
+}
+
+.donateImg {
+  width: 100%;
+}
+
+.donateButtons {
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: stretch;
+  flex-direction: column;
+  display: flex;
+}
+
+.donationsRow {
+  padding-top: 150px;
+}
+
+.doncol1 {
+  padding-left: 10%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.doncol2 {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+/* buttons */
+
+button {
+	border-radius: 3px;
+  border: 2px solid #FBDCA9;
+  letter-spacing: -0.3px;
+	box-shadow: 7px 7px 0px 0px #687582;
+	font-size: 15px;
+	color: black;
+	background-color: #FBE5C1;
+	padding: 8px 16px;
+	margin-bottom:32px;
+	font-size: 15px;
+	font-family: Signika;
+  font-weight: 400;
+  padding: 10px;
+
+}
+
+button:hover {
+	 background-color: #F5908B;
+	 border: 2px solid #687582;
+    transform: translate3d(3px, 3px, 0px);
+	transition: transform 0.25s;
+	box-shadow: none;
+}
+
+.patreon-link {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+}
+.feedback {
+  text-align: center;
+  padding-bottom:5%;
+}
+
+.feedback-row {
+  margin-top: 60px;
+  padding-left: 10%;
+  padding-right:10%;
+  padding-bottom:5%;
+}
+
+footer {
+  height: 150px;
+  background-color: #F5908B;
+  text-align: center;
+}
+p {
+  padding-top: 70px;
+  font-size: 0.8rem;
+}
+
+.feedback-container {
+  padding-bottom: 30px;
+}
+#jump3 {
+  padding-bottom: 140px;
+}
+
+.feedtext {
+  padding-bottom: 40px;
+}
+
+#text {
+  height: 150px;
+  margin-bottom: 20px;
+}
+.form-control {
+  background-color: #FBE5C1;
+}
