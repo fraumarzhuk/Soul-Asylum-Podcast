@@ -4,7 +4,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $email = $_POST['email'];
   $feedback = $_POST['feedback'];
 
-  $to = 'info@example.com';
+  $to = 'fraumarzhuk@gmail.com';
   $subject = 'Feedback from ' . $name;
   $message = $feedback . "\n\n" . 'From: ' . $name . ' <' . $email . '>';
   $headers = 'From: noreply@example.com' . "\r\n" .
