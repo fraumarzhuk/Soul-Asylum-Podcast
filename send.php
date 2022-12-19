@@ -1,35 +1,16 @@
 <?php
-$name = $POST['name'];
-$email = $POST['email'];
-$text = $POST['text'];
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+  $name = $_POST['name'];
+  $email = $_POST['email'];
+  $feedback = $_POST['feedback'];
 
-$name = htmlspecialchars($name);
-$email = htmlspecialchars($email);
-$text = htmlspecialchars($text);
+  $to = 'info@example.com';
+  $subject = 'Feedback from ' . $name;
+  $message = $feedback . "\n\n" . 'From: ' . $name . ' <' . $email . '>';
+  $headers = 'From: noreply@example.com' . "\r\n" .
+             'Reply-To: ' . $email . "\r\n" .
+             'X-Mailer: PHP/' . phpversion();
 
-$name = urldecode($name);
-$email = urldecode($email);
-$text = urldecode($text);
-
-$name = trim($name);
-$email = trim($email);
-$text = trim($text);
-
-
-if (mail("fraumarzhuk@gmail.com",
-         "Soul Asylum Feedback",
-         "Name: ".$name."\n".
-         "Email: ".$email."\n".
-         "Text: ".$text."\n".
-         "From: fraumarzhuk@gmail.com \r\n")
-) {
-  echo ('Письмо успешно отправлено');
+  mail($to, $subject, $message, $headers);
 }
-  else {
-
-  echo ('Кажется, произошла ошибка... Пожалуйста, проверь данные еще раз.');
-}
-
-)
-
- ?>
+?>
