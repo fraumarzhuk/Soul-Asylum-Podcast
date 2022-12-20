@@ -1,5 +1,5 @@
 function Scrolldown() {
-     window.scrollTo(0, document.body.scrollHeight);
+     window.scrollTo(0, 10000);
 }
 
 window.onload = Scrolldown;
