@@ -5,6 +5,9 @@ body {
   margin: 0;
   font-family: 'Unbounded';
 }
+a {
+  font-family: 'Unbounded';
+}
 
 h1 {
   color: #FBE5C1;
@@ -187,7 +190,7 @@ button {
 	padding: 8px 16px;
 	margin-bottom:32px;
 	font-size: 15px;
-	font-family: Signika;
+	font-family: 'Unbounded';
   font-weight: 400;
   padding: 10px;
 
