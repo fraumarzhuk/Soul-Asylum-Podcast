@@ -119,7 +119,7 @@ button:hover {
     display: none;
   }
   .patreonButton{
-    margin-top: 60px;
+    margin-top: 10px;
   }
   #jump3 {
     padding-bottom: 40px!important;
@@ -135,6 +135,13 @@ button:hover {
   }
   .feedback-row {
     margin-top: 0px!important;
+  }
+  .feedback-container {
+    padding-top: 50px;
+  }
+  .donateButtons {
+    margin-top: 80px;
+    padding-bottom: 40px;
   }
 }
 
